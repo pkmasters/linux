@@ -1,0 +1,10 @@
+# This is a reference Caddy block configuration for a reverse proxy that will give insight into the "actual" host connecting via a web app behind Caddy
+
+# Example used is with a Technitium DNS server web GUI behind Caddy. This configuration will ensure that the remote address accessing the web GUI from the "actual" client, not from the Caddy IP address.
+
+        @dns host dnsportal.domain.com
+        handle @dns1 {
+                reverse_proxy ip-address:8080 {
+                        header_up X-Real-IP {http.request.remote.host}
+                }
+        }
