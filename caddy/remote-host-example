@@ -1,0 +1,6 @@
+        @dns host dnsportal.domain.com
+        handle @dns1 {
+                reverse_proxy ip-address:8080 {
+                        header_up X-Real-IP {http.request.remote.host}
+                }
+        }
