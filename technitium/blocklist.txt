@@ -1,0 +1,5 @@
+https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts
+https://nsfw.oisd.nl/domainswild2
+https://blackhole.myblack.zone/download/raw-bhp.txt
+https://cti-lists.cisecurity.org/lists/IPs-30days.txt
+https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/ultimate-onlydomains.txt
